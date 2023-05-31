@@ -1,0 +1,24 @@
+{
+  "name": "roll-up-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c rollup.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-typescript": "^11.1.0",
+    "path": "^0.12.7",
+    "rollup": "^3.21.6",
+    "rollup-plugin-dts": "^5.3.0",
+    "tslib": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.1.1"
+  }
+}

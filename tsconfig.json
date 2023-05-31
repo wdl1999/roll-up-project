@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "skipLibCheck": true,
+        "target": "es6",
+        "module": "esnext",
+        "strict": false,
+        "jsx": "preserve",
+        "importHelpers": true,
+        "moduleResolution": "node",
+        "noUnusedLocals": true,
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "allowSyntheticDefaultImports": true,
+        "allowImportingTsExtensions": true, // 允许导入文件为ts后缀
+        "noEmit":true, // 不生成输出文件
+        "sourceMap": true,
+    },
+
+    "exclude": [
+        "node_modules"
+    ]
+}
