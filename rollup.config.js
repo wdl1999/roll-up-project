@@ -15,6 +15,6 @@ export default {
   output: {
     file: 'dist/bundle.cjs',
     format: 'cjs',
-    external: ['lodash'] // 告诉rollup不要将lodash打包，而是作为外部依赖 以此减小包体积
+    external: ['lodash'] // 告诉rollup不要将lodash打包， 减小包体积
   }
 }
