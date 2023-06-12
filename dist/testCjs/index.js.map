@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sources":["../../src/testCjs/index.cjs"],"sourcesContent":["console.log(\"test.cjs内的打印\");\r\n\r\nmodule.exports = {\r\n  text: \"hello world!22\",\r\n};\r\n"],"names":[],"mappings":";;AAAA,OAAO,CAAC,GAAG,CAAC,cAAc,CAAC,CAAC;AAC5B;AACA,IAAA,OAAc,GAAG;AACjB,EAAE,IAAI,EAAE,gBAAgB;AACxB,CAAC,CAAA;;;;;;"}

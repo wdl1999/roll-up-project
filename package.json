@@ -1,9 +1,9 @@
 {
-  "name": "roll-up-project",
+  "name": "@wdl1999/roll-up-project",
   "version": "1.0.0",
   "description": "",
-  "main": "./dist/main.js",
-  "module": "./dist/main.js",
+  "main": "./dist/bundle.js",
+  "module": "./dist/modules/bundle.js",
   "type": "module",
   "scripts": {
     "build": "rollup -c rollup.config.js",
@@ -36,5 +36,9 @@
   },
   "devDependencies": {
     "@types/node": "^20.1.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

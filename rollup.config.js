@@ -36,14 +36,19 @@ export default {
     }),
     strip({ include: '**/*.ts' })
   ],
-  output: {
-    // file: "dist7/bundle.js", // 单个chunk时使用
-    dir: path.dirname(pkg.module), // package.json中配置打包出口，即引入时文件入口
-    format: 'esm', // 生成的包规范
-    name: 'bundleTest', // 生成的包名称
-    preserveModules: true, // 保留模块结构
-    preserveModulesRoot: 'src', // 保留模块结构的根目录
-    // external: ["lodash-es"], // 告诉rollup不要将lodash-es打包，而是作为外部依赖 以此减小包体积
-    sourcemap: true
-  }
+  output: [
+    {
+      dir: path.dirname(pkg.module), // package.json中配置打包出口，即引入时文件入口
+      format: 'esm', // 生成的包规范
+      name: 'bundleTest', // 生成的包名称
+      preserveModules: true, // 保留模块结构
+      preserveModulesRoot: 'src', // 保留模块结构的根目录
+      // external: ["lodash-es"], // 告诉rollup不要将lodash-es打包，而是作为外部依赖 以此减小包体积
+      sourcemap: true
+    },
+    {
+      file: pkg.main,
+      format: 'cjs'
+    }
+  ]
 }
