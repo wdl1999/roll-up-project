@@ -2,10 +2,12 @@
   "name": "roll-up-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./dist/main.js",
+  "module": "./dist/main.js",
   "type": "module",
   "scripts": {
     "build": "rollup -c rollup.config.js",
+    "dev": "vite",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,9 +18,11 @@
     "@babel/preset-env": "^7.22.4",
     "@rollup/plugin-babel": "^6.0.3",
     "@rollup/plugin-commonjs": "^25.0.0",
+    "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-strip": "^3.0.2",
     "@rollup/plugin-typescript": "^11.1.1",
+    "fs": "*",
     "lodash-es": "^4.17.21",
     "path": "^0.12.7",
     "rollup": "^3.21.6",
@@ -26,7 +30,9 @@
     "rollup-plugin-node-externals": "^6.0.1",
     "rollup-plugin-postcss": "^4.0.2",
     "sass": "^1.62.1",
-    "tslib": "^2.5.0"
+    "tslib": "^2.5.0",
+    "vite": "^4.3.9",
+    "vite-plugin-vue2": "^2.0.3"
   },
   "devDependencies": {
     "@types/node": "^20.1.1"
