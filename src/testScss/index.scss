@@ -1,4 +1,9 @@
 body {
     background-color: red;
     display: flex;
+    #drag-zone{
+        width: 500px;
+        height: 500px;
+        border: dashed 1px #ccc;
+    }
 } 
