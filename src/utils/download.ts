@@ -7,7 +7,9 @@ export function getBlob(item, url) {
   xhr.open("GET", url);
   xhr.responseType = "blob"; // 返回blob格式
   xhr.onload = () => {
-    downloadWithBlob(item, xhr.response);
+    if (xhr.status === 200) {
+      downloadWithBlob(item, xhr.response);
+    }
   };
   xhr.send(null);
 }
